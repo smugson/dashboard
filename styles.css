@@ -178,15 +178,20 @@ main{
     font-size: 0.8rem;
 }
 
-.cta:last-child{
-    float: right;
-}
 
 .cta{
-    margin-top: 30px;
-    float: right;
-    margin-bottom: 0;
+    position: absolute;
+    right: -60px;
+    bottom: 5px;
+    /* background-color: brown; */
+    display: flex;
+    justify-content: space-between;
 }
+
+.cta span{
+    padding: 5px;
+}
+
 
 .trend{
     margin-bottom: 20px;
@@ -194,15 +199,11 @@ main{
 
 .grant{
     border-left: 8px solid orange;
+    position: relative;
 }
 
 .grant p{
     font-size: 1.0rem;
-}
-
-.cargo div{
-    position: relative;
-    right: 0;
 }
 
 
@@ -220,8 +221,8 @@ main{
 }
 
 .trending-card{
-    margin-top: 0;
-    padding: 0;
+    margin-top: 10px;
+    padding-bottom: 30px;
 }
 
 
