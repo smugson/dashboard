@@ -62,8 +62,7 @@ main{
     background-color:white;
     display: grid;
     grid-template-rows: 1fr 2fr;
-    padding-top: 30px;
-    gap: 20px;
+    padding-top: 20px;
 }
 
 .header, .sub-header{
@@ -73,7 +72,7 @@ main{
     grid-template-columns: 3fr 1fr;
     justify-content: space-between;
     align-items: center;
-    font-size: 1.2rem;
+    font-size: 1.2em;
 }
 
 .search{
@@ -100,15 +99,15 @@ main{
 }
 
 .profile{
-    padding: 0 10px;
+    /* padding: 0 10px; */
     display: flex;
     align-items: center;
-    font-size: 1.8rem;
+    font-size: 1.8em;
     justify-content: space-around;    
 }
 
 .mumu{
-    font-size: 2.3rem;
+    font-size: 2.1rem;
     color: white;
     background-color: yellow;
 }
