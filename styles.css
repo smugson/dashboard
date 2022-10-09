@@ -10,19 +10,19 @@
 }
 
 html{
-    font-size: 12px;
+    font-size: 14px;
 }
 
 body{
-    width: 100%;
+    width: 100vw;
     /* height: 100vh; */
     font-family: poppins, sans-serif;
     font-size: 0.85rem;
 }
 
 .container{
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     display: grid;
     grid-template-columns: 1fr 5fr;
 }
@@ -31,8 +31,8 @@ body{
 aside{
     background-color: blue;
     display: grid;
-    grid-template-rows: 50px auto ;
-    gap: 30px;
+    grid-template-rows: 40px auto ;
+    gap: 20px;
     padding: 30px;
 }
 
@@ -40,22 +40,21 @@ aside a{
     display: flex;
     color: white;
     gap: 10px;
-    font-size: 1.2rem;
+    font-size: 1rem;
     align-items: center;
 }
 
 .sidebars {
     display: grid;
-    grid-template-rows: repeat(4, 1fr);
-    gap: 20px;
+    grid-template-rows: repeat(6, 1fr);
+    gap: 10px;
 }
 
 
 main{
-    /* padding-top: 30px; */
     display: grid;
-    grid-template-rows: 1fr auto;
-    background-color: #cbcbd4;
+    grid-template-rows: 120px auto;
+    background-color: #9191a3;
 }
 
 .nav-bar{
@@ -65,14 +64,24 @@ main{
     padding-top: 20px;
 }
 
-.header, .sub-header{
+.header{
     width: 90%;
     margin: auto;
     display: grid;
     grid-template-columns: 3fr 1fr;
     justify-content: space-between;
     align-items: center;
-    font-size: 1.2em;
+    font-size: 0.7rem;
+}
+
+.sub-header{
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.7rem;
 }
 
 .search{
@@ -83,7 +92,7 @@ main{
 }
 
 .search input{
-    height: 40px;
+    height: 30px;
     background-color: #cbcbd4;
     border: 3px solid #ccc ;
     border-radius: 10px;
@@ -123,49 +132,50 @@ main{
 
 .right-subheader ul{
     display: flex;
-    color: white;
     justify-content: space-between;
 }
 
 .right-subheader ul li{
     background-color: blue;
-   width: 80px;
-   border-radius: 10px;
-   text-align: center;
-   padding: 5px 0;
+    width: 60px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 5px 0;
 }
 
 .right-subheader a{
     color: white;
+    font-weight: bold;
 }
 
 .showcase{
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 2.5fr 1fr;
     gap: 15px;
     width: 95%;
-    margin: auto;
+    margin: 0 auto;
     font-size: 1.0rem;
-    margin-bottom: 30px;
 }
 
 .project-container{
     display: grid;
     grid-template-rows: 40px auto;
-    margin-top: 18px;
+    margin-top: 5px;
 }
 
 .projects{
+    resize: both;
+    overflow: auto;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 20px;
 }
 
 .project-card{
     background-color: white;
-    padding: 30px;
+    padding: 10px 30px;
     border-radius: 10px;
-    /* font-size: 1.1rem; */
+    font-size: 0.8rem;
 }
 
 .cta:last-child{
@@ -175,6 +185,7 @@ main{
 .cta{
     margin-top: 30px;
     float: right;
+    margin-bottom: 0;
 }
 
 .trend{
@@ -186,7 +197,7 @@ main{
 }
 
 .grant p{
-    font-size: 1.1rem;
+    font-size: 1.0rem;
 }
 
 .cargo div{
@@ -201,21 +212,27 @@ main{
 }
 
 .other{
-    margin-top: 12px;
+    /* margin-top: 5px; */
     display: grid;
-    grid-template-rows: repeat(2 1fr);
+    grid-template-rows: repeat(2, 1.5fr);
     gap: 15px;
-    font-size: 1.0rem;
+    /* font-size: 0.9rem; */
 }
 
-/* .announcement-card{
-    font-size: 1.1rem;
-} */
+.trending-card{
+    margin-top: 0;
+    padding: 0;
+}
+
 
 .announcement-card div{
-    margin: 10px 0;
+   margin-top: 10px ;
+   padding-bottom: 15px;
 }
 
+.announcement-card p{
+    font-size: 1.0rem;
+}
 hr{
     border: 1px solid #cbcbd4;
 }
